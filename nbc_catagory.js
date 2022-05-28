@@ -37,6 +37,7 @@ axios.get("https://www.nbcnews.com/archive/articles/"+ String(year) + "/" + Stri
                 } catch (error) {
                     return res.send(error.message);
                   }
+                setTimeout(() => reject('woops'), 500);
             })
         }
         
